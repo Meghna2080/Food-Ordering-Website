@@ -8,4 +8,4 @@ The website consists of three webpages:
 - Pricing Page: Lets the user add the items to the cart, calculates bill, displays it to the user and lets the user to pay the bill
 Additionally, the website contains option to make reservation in restaurants by specifying specific details. It webpages contain the links to the other social media handles of "Foodies"
 
-You can view the website here:[Foodies](https://meghna2080.github.io/Food-Ordering-Website/index.html)
+You can view the website here: [Foodies](https://meghna2080.github.io/Food-Ordering-Website/index.html)
