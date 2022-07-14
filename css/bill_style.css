@@ -1,0 +1,207 @@
+body {
+    text-align: center;
+    font-family: "Montserrat";
+}
+hr{
+    border-top: 2px solid #828282;
+    width: 120px;
+    }
+
+.billing {
+    width: 100%;
+    background-color: #E0C097;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+.row{
+    justify-content: center;
+}
+#food-item{
+    font-weight:600;
+    color:#632e19;
+    font-size: 80%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#quant{
+    font-weight:600;
+    color:#632e19;
+    font-size: 80%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+.title-heading{
+    font-size: 2.5rem !important;
+    margin-left: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+.selectItems {
+    background-image: url("../images/bill-list-background.jpg");
+    margin: 30px;
+    background-size: contain;
+    background-repeat: repeat;
+    height: 343px;
+    width: 200px;
+    padding: 10px;
+    padding-top: 50px;
+    border: 2px solid black;
+    background-color: #B85C38;
+    align-items: center;
+}
+
+.inside {
+    /* margin-top: 55px; */
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    font-size: large;
+}
+
+.food-input {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 35px;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    background-color: #E0C097;
+}
+
+.label-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 7px;
+    padding: 4px;
+    color:#f8f5f2 ;
+    text-align: center;
+    display: block;
+}
+
+.cartAdded {
+    background-color: peru !important;
+    color: #fff !important;
+    border: 1px solid #B85C38 !important;
+    font-family: "Montserrat-Bold"!important;
+    font-weight: bolder;
+}
+
+.cart {
+    background-image: url("../images/bill-list-background.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    margin: 30px;
+    height: 340px;
+    width: 250px;
+    background-color: #B85C38;
+    color: #fff;
+    padding-top: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    display: inline-block;
+}
+
+.list-heading {
+    font-family: "Montserrat";
+    font-weight: bold;
+    list-style: none;
+    font-size: 20px;
+}
+
+.not-style {
+    list-style: none;
+}
+
+.calculate {
+    /* background-color: red; */
+    margin: auto;
+    text-align: center;
+    background-color: #E0C097;
+    padding: 10px;
+    padding-top: 0px;
+}
+#reservation{
+    margin-top: 2%;
+	background-color:peru;
+	color: #f8f5f2;
+    border: none;
+}
+#reservation:hover{
+	background-color:#632e19;
+}
+
+.calc {
+    background-color: #B85C38 !important;
+    color: white !important;
+    border: 1px solid #B85C38 !important;
+    font-family: "Montserrat-Bold" !important;
+    font-weight: bolder !important;
+    margin-bottom: 10px;
+}
+
+#pay {
+    display: none;
+}
+
+.pay-icon {
+    margin: 20px 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#payment {
+    display: none;
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.bill-heading {
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    text-align: center;
+    display: none;
+}
+
+.reservation {
+    display: none;
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+#reserve-msg{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #632e19;
+    padding: 5px;
+    font-size: 150%;
+}
+
+/* width */
+
+.cart::-webkit-scrollbar {
+     width: 5px; 
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#footer {
+    text-align: center;
+}

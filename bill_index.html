@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bill_style.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Food Ordering</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <section id="title">
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand title-heading" href="">foodies</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bill_index.html">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
+
+    <div class="bill-heading" id="top-heading">
+        <h3 id="total-bill"></h3>
+    </div>
+
+
+    <!-- Billing Section -->
+
+    <section>
+
+        <div class="billing">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 selectItems">
+
+                        <div class="inside">
+                            <label for="food-item" class="label-text">Select any Item:</label>
+                            <select class="form-select food-input" aria-label="Default select example" id="food-item">
+                                <option selected>Open this select menu</option>
+
+
+
+
+                            </select>
+                            <br>
+                            <label for="quant" class="label-text">Enter quantity:</label>
+                            <input type="number" id="quant" class="food-input" required>
+                            <br><br>
+                            <button class="btn btn-light btn-lg cartAdded" onclick="addToCart()">Add to Cart</button>
+                            <button class="btn btn-light btn-lg cartAdded" onclick="resetTable()">Reset</button>
+                        </div>
+
+                    </div>
+                    <div class="cart col-lg-5">
+
+
+                        <table class="table" id="data">
+                            <!-- <thead> -->
+                            <tr>
+                                <th scope="col">Items</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">MRP</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </table>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="calculate">
+            <button class="btn btn-light btn-lg calc" onclick="calculateTotalBill()">Calculate Bill</button>
+        </div>
+
+        <div class="calculate" id="pay">
+            <button class="btn btn-light btn-lg calc" onclick="showPayment()">Pay Bill</button>
+        </div>
+
+        <div id="payment">
+            <i class="pay-icon fab fa-paypal"></i>
+            <i class="pay-icon fab fa-cc-amazon-pay"></i>
+            <i class="pay-icon fab fa-apple-pay"></i>
+            <i class="pay-icon fab fa-cc-visa"></i>
+            <i class="pay-icon fab fa-cc-mastercard"></i>
+        </div>
+
+        <!-- Contact form -->
+
+    </section>
+
+    <section id="contactUs">
+        <div class="contact1">
+            <h1 class="heading1">Contact Us</h1>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputname1">Name</label>
+                    <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp"
+                        placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleEmail" aria-describedby="emailHelp"
+                        placeholder="Enter email" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputmsg1">Details</label>
+                    <textarea name="message" rows="8" class="form-control" id="message"
+                        placeholder="Enter timings and required table size and other details"></textarea>
+                </div>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                <button type="button" id= "reservation" class="btn btn-primary btn-lg btnc" onclick="addReservation()">Make a
+                    Reservation</button>
+        </div>
+    </section>
+    <div class="reservation" id="reserve-content">
+        <p id="reserve-msg"></p>
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/?lang=en-in"  class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"  class="fa fa-envelope"></a>
+        <p>Your feedback is highly appreciated and will help us to improve our ability to serve you</p>
+
+    </footer>
+
+    <script src="JavaScript/bill_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body {
+	font-family: "Montserrat";
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:sans-serif;
+	font-weight: bolder;
+	margin-top: 3%;
+	color: #2c0f03;
+}
+p{
+	color: #f7eeee;
+}
+#title {
+	background-color: #B85C38;
+	color: #fff;
+	text-align: left;
+}
+.container-fluid {
+	padding: 2% 15% 1%;
+	
+}
+.navbar {
+	padding: 0 0 0rem;
+}
+.navbar-brand {
+	font-family: "Ubuntu";
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.nav-item {
+	padding: 0 18px;
+}
+
+.nav-link {
+	font-size: 1.2rem;
+	font-family: "Montserrat-Light";
+}
+#testimonials{
+	background-color: #E0C097;
+	color: #fff;
+}
+.testimonial-text{
+	font-size: 3rem;
+	line-height: 1.5;
+}
+.testimonial-image{
+	text-align: center;
+	width: 90%;
+	height: 100%;
+	margin: 0px;
+}
+.carousel-item{
+	padding: 0% 5%;
+}
+#contactUs{
+	display: flex;
+	justify-content:space-evenly;
+	background-color: #F1E9E5;
+	text-align: center;
+}
+.contact1{
+	padding: 6% 15% 6%;
+	font-size: 20px;
+}
+.btn{
+	margin-top: 2%;
+	background-color:peru;
+	color: #f8f5f2;
+}
+.btn:hover{
+	background-color:#632e19;
+}
+
+.heading1{
+	font-size: 22px;
+	font-weight: bolder;
+}
+hr{
+border-top: 2px solid #828282;
+width: 120px;
+}
+#footer{
+	background-color: #E0C097;
+	padding: 6% 15%;
+}
+.social-icon{
+	margin: 20px 10px;
+}
+#menu-list{
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #f0edeb;
+}
+#menu-list ul{
+	background: #f0edeb;
+	padding: 20px;
+  }
+#menu-list ul li {
+	background: #dfd3c6;
+	margin: 5px;
+  }
+.list{
+	display: inline-grid;
+	text-align: center;
+	list-style-type: none;
+}
+.snacks-head{
+	font-family:fantasy;
+	font-size: 30px;
+	color: #632e19;
+}
+.group1{
+	display: inline-grid;
+	align-items: center;
+}
+.group2{
+	display: inline-grid;
+	align-items: center;
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	color:#2c0f03;
+	text-align: center;
+	text-decoration: none;
+  }
+  .fa:hover {
+	color:#2c0f03;
+	opacity: 0.7;
+	text-decoration: none;
+  }
+
