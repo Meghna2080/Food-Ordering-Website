@@ -10,7 +10,6 @@ var totalBill = 0;
 var selectedItems = [];
 var quantityItem = [];
 
-// window.onload(function(){
 for (var j = 0; j < items.length; j++) {
     var item = items[j];
     var ele = document.createElement("option");
@@ -18,7 +17,6 @@ for (var j = 0; j < items.length; j++) {
     ele.value = item;
     select.appendChild(ele);
 }
-// })
 
 
 function addToCart() {
@@ -31,6 +29,9 @@ function addToCart() {
     }
     else if (quantity == "") {
         alert("Enter quantity");
+    }
+    else if (quantity <=0) {
+        alert("Please enter valid quantity");
     }
     else {
         selectedItems.push(food);
