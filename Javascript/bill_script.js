@@ -84,8 +84,7 @@ function calculateTotalBill() {
 
     document.getElementById("pay").style.display = "block";
     document.getElementById("top-heading").style.display = "block";
-
-
+    document.getElementById("total-bill").style.padding= "6px";
     document.getElementById("total-bill").innerHTML = "Hey Foodies, Your total Bill is Rs. " + totalBill + "<br>Have a nice day !";
 
 }
