@@ -107,12 +107,17 @@ function addReservation() {
     var name = document.getElementById("exampleName").value;
 
     var email = document.getElementById("exampleEmail").value;
+    
+    var message = document.getElementById("message").value;
 
     if (name == "") {
         alert("Please Enter name");
     }
     else if (email == "") {
         alert("Please enter email");
+    }
+    else if(message ==""){
+        alert("Please enter reservation details");
     }
     else {
         document.getElementById("reserve-content").style.display = "block";
